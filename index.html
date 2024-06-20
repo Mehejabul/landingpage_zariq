@@ -30,10 +30,9 @@
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- Toastr Css-->
     <link rel="stylesheet" type="text/css" href="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
-
-    <link href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-" rel="stylesheet">
+ <!-- Slick CSS -->
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+ <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <!-- Aos Animation js library Css-->
     <link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
 
@@ -50,33 +49,27 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                     <div class="col-xl-12">
                         <div class="header_table_cell">
                             <div class="header_logo">
-                                <a href="index.html">
+                                <a href="">
                                     <img src="./assets/images/company_logo/zariq_logo.png">
                                 </a>
                             </div>
                             <nav class="main_menu">
                                 <ul>
                                     <li>
-                                        <a href="index.html" class="main_menu_link">Home</a>
+                                        <a href="home" class="main_menu_link">Home</a>
                                     </li>
                                     <!-- Get all products/clients/websites -->
 
                                     <li>
-                                        <a href="#" class="main_menu_link">
+                                        <a href="product" class="main_menu_link">
                                             Product
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="about-us.html" class="main_menu_link">About Us</a>
+                                        <a href="about_us" class="main_menu_link">About Us</a>
                                     </li>
                                     <li>
-                                        <a href="services.html" class="main_menu_link">Services</a>
-                                    </li>
-                                    <li>
-                                        <a href="blogs.html" class="main_menu_link">Blogs</a>
-                                    </li>
-                                    <li>
-                                        <a href="all-documents.html" class="main_menu_link">Docs</a>
+                                        <a href="services" class="main_menu_link">Services</a>
                                     </li>
                                     <li>
                                         <a href="offers.html" class="main_menu_link">Offers</a>
@@ -174,7 +167,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
     <!--============ Page Content Area End ============-->
     <!--============ Banner Area Start ============-->
-    <section class="banner_area section_padding">
+    <section class="banner_area section_padding" id="#home">
         <div class="container">
             <div class="row gy-4">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
@@ -206,7 +199,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <!--============ Banner Area End ============-->
 
     <!--============ About Us  start============-->
-    <section class="aboutus_area section_padding">
+    <section class="aboutus_area section_padding" id="#about_us">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -217,24 +210,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                     <div class="aboutus_text">
-                        <h2 class="aboutus_title"> Why Chosse Zariq Ltd </h2>
-                        <!-- <h3 class="aboutus_subtitle">Why Chosse Zariq Ltd</h3> -->
-                        <p class="aboutus_peragraph1">Zariq Ltd is dedicated to providing top-quality software solutions
-                            that help businesses to grow and succeed. We are a team of experienced professionals who are
-                            passionate about what we do and are always looking for new and innovative ways to improve
-                            our services.</p>
+                        <h2 class="aboutus_title"> আপনি কেন জারিক লিমিটেড সিলেক্ট করবেন? </h2>
 
-                        <p class="aboutus_peragraph2">Our goal is to provide our clients with high quality software
-                            solutions that meet their unique needs and requirements. We are committed to delivering
-                            exceptional results and providing a high level of customer service.</p>
+                        <p class="aboutus_peragraph1">Zariq Ltd শীর্ষ-মানের সফ্টওয়্যার সমাধান প্রদানের জন্য নিবেদিত যা ব্যবসার বৃদ্ধি এবং সফল হতে সাহায্য করে। আমরা অভিজ্ঞ পেশাদারদের একটি দল যারা আমরা যা করি সে সম্পর্কে উত্সাহী এবং আমাদের পরিষেবাগুলিকে উন্নত করার জন্য সর্বদা নতুন এবং উদ্ভাবনী উপায়গুলির সন্ধান করি৷</p>
 
-                        <p class="aboutus_peragraph3">We are a dynamic and forward-thinking company that is always
-                            looking for new challenges and opportunities. We believe in the power of technology to
-                            transform businesses and are excited to work with clients to help them achieve their goals.
+                        <p class="aboutus_peragraph2">আমাদের লক্ষ্য হল আমাদের ক্লায়েন্টদের উচ্চ মানের সফ্টওয়্যার সমাধান প্রদান করা যা তাদের অনন্য চাহিদা এবং প্রয়োজনীয়তা পূরণ করে। আমরা ব্যতিক্রমী ফলাফল প্রদান এবং গ্রাহক সেবা একটি উচ্চ স্তরের প্রদান করতে প্রতিশ্রুতিবদ্ধ.</p>
+
+                        <p class="aboutus_peragraph3">আমরা একটি গতিশীল এবং অগ্রগতি-চিন্তাকারী সংস্থা যা সর্বদা নতুন চ্যালেঞ্জ এবং সুযোগের সন্ধান করে। আমরা ব্যবসায় রূপান্তর করতে প্রযুক্তির শক্তিতে বিশ্বাস করি এবং ক্লায়েন্টদের তাদের লক্ষ্য অর্জনে সহায়তা করার জন্য তাদের সাথে কাজ করতে আগ্রহী।
                         </p>
 
-                        <p class="aboutus_peragraph3">Thank you for considering us for your software needs. We look
-                            forward to working with you and helping your business to thrive.</p>
+                        <p class="aboutus_peragraph3">আপনার সফ্টওয়্যার প্রয়োজনের জন্য আমাদের বিবেচনা করার জন্য আপনাকে ধন্যবাদ. আমরা আপনার সাথে কাজ করার এবং আপনার ব্যবসার উন্নতির জন্য সাহায্য করার জন্য উন্মুখ।</p>
                     </div>
                 </div>
             </div>
@@ -246,21 +231,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 
 
     <!--============   plane start============-->
-    <section class="plan_area plana_area_padding">
+    <section class="plan_area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="header_title text-center">
-                        <h2 class="header_title_text"> Explore our Plan</h2>
-                        <p class="header_subtitle">We provide different services to kick-start your business and help to
-                            transform your idea into the real world.</p>
+                        <h2 class="header_title_text">আমাদের সার্ভিস প্ল্যানগুলো দেখুন</h2>
+                        <p class="header_subtitle">
+                            আমরা আপনার ব্যবসা শুরু করতে এবং সাহায্য করার জন্য বিভিন্ন পরিষেবা প্রদান করি</p>
                     </div>
                 </div>
             </div>
-            <div class="carosoul">
-                <div class="row">
-                    <div class="smooth_slide owlCarousel">
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+            <div class="row">
+                <div class="plane_wrapper">
+                    <div class="plane_slide">
                             <div class="our_single_service" data-aos="flip-left">
                                 <div class="service_title">
                                     <h2 class="service_title_name text-center">Plan A</h2>
@@ -290,13 +274,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                 <div class="service_button">
                                     <div class="common_btn mt-3 mt-5">
                                         <a href="#" class="common_btn_link" target="_blank">
-                                            <span class="common_btn_title">Order now</span>
+                                            <span class="common_btn_title">অর্ডার করুন</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    </div>
+                    <div class="plane_slide">
                             <div class="our_single_service" data-aos="flip-left">
                                 <div class="service_title">
                                     <h2 class="service_title_name text-center">Plan B</h2>
@@ -326,16 +310,16 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                 <div class="service_button">
                                     <div class="common_btn mt-3 mt-5">
                                         <a href="#" class="common_btn_link" target="_blank">
-                                            <span class="common_btn_title">Order now</span>
+                                            <span class="common_btn_title">অর্ডার করুন</span>
                                         </a>
                                     </div>
                                 </div>
-                            </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+                    </div>
+                    <div class="plane_slide">
                             <div class="our_single_service" data-aos="flip-left">
                                 <div class="service_title">
-                                    <h2 class="service_title_name text-center">Plan A</h2>
+                                    <h2 class="service_title_name text-center">Plan C</h2>
                                 </div>
                                 <div class="our_service_list">
                                     <ul>
@@ -362,11 +346,46 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                 <div class="service_button">
                                     <div class="common_btn mt-3 mt-5">
                                         <a href="#" class="common_btn_link" target="_blank">
-                                            <span class="common_btn_title">Order now</span>
+                                            <span class="common_btn_title">অর্ডার করুন</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
+                    </div>
+                    <div class="plane_slide">
+                            <div class="our_single_service" data-aos="flip-left">
+                                <div class="service_title">
+                                    <h2 class="service_title_name text-center">Plan D</h2>
+                                </div>
+                                <div class="our_service_list">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            <a href="#" class="service_title_link" target="_blank">
+                                                <span>Website Design Service</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            <a href="#" class="service_title_link" target="_blank">
+                                                <span>Website Design Service</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-check"></i>
+                                            <a href="#" class="service_title_link" target="_blank">
+                                                <span>Website Design Service</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="service_button">
+                                    <div class="common_btn mt-3 mt-5">
+                                        <a href="#" class="common_btn_link" target="_blank">
+                                            <span class="common_btn_title">অর্ডার করুন</span>
+                                        </a>
+                                    </div>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -382,24 +401,24 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="header_title text-center">
-                        <h2 class="header_title_text"> Explore Our Landing Page</h2>
-                        <p class="header_subtitle">We provide different landing page to kick-start your business and
-                            help to transform your idea into the real world.</p>
+                        <h2 class="header_title_text">আমাদের ল্যান্ডিং পেইজ গুলো দেখুন</h2>
+                        <p class="header_subtitle">আমরা আপনার ব্যবসা শুরু করতে বিভিন্ন ল্যান্ডিং পেইজ প্রদান করি এবং
+                            আপনার ধারণাকে বাস্তব জগতে রূপান্তর করতে সাহায্য করি</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="service_scroll owlCarousel">
-                <div class="row my-5">
+            <div class="service_scroll">
+                <div class="row my-5 page_slide">
                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
                         <div class="offer_image_container">
                             <img src="./assets/images/company_logo/work1jfif400x400.jpg" alt="offer"
                                 class="offer_image">
                             <div class="offer_overlay">
-                                <a href="#" target="_blank" class="offer_btn_link">Order Now</a>
+                                <a href="#" target="_blank" class="offer_btn_link">অর্ডার করুন</a>
                                 <br>
-                                <a href="https://wa.me/+8801759416979" target="_blank" class="offer_btn_link">Demo</a>
+                                <a href="#" target="_blank" class="offer_btn_link">ডেমো দেখুন</a>
                             </div>
                         </div>
                     </div>
@@ -407,8 +426,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <div class="offer_image_container">
                             <img src="./assets/images/company_logo/work2400x400.png" alt="offer" class="offer_image">
                             <div class="offer_overlay">
-                                <a href="https://wa.me/+8801759416979" target="_blank" class="offer_btn_link">Order
-                                    Now</a>
+                                <a href="#" target="_blank" class="offer_btn_link">অর্ডার করুন</a>
+                                <br>
+                                <a href="#" target="_blank" class="offer_btn_link">ডেমো দেখুন</a>
                             </div>
                         </div>
                     </div>
@@ -416,8 +436,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <div class="offer_image_container">
                             <img src="./assets/images/company_logo/work3400x400.png" alt="offer" class="offer_image">
                             <div class="offer_overlay">
-                                <a href="https://wa.me/+8801759416979" target="_blank" class="offer_btn_link">Order
-                                    Now</a>
+                                <a href="#" target="_blank" class="offer_btn_link">অর্ডার করুন</a>
+                                <br>
+                                <a href="#" target="_blank" class="offer_btn_link">ডেমো দেখুন</a>
                             </div>
                         </div>
                     </div>
@@ -425,8 +446,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         <div class="offer_image_container">
                             <img src="./assets/images/company_logo/work4400x400.png" alt="offer" class="offer_image">
                             <div class="offer_overlay">
-                                <a href="https://wa.me/+8801759416979" target="_blank" class="offer_btn_link">Order
-                                    Now</a>
+                                <a href="#" target="_blank" class="offer_btn_link">অর্ডার করুন</a>
+                                <br>
+                                <a href="#" target="_blank" class="offer_btn_link">ডেমো দেখুন</a>
                             </div>
                         </div>
                     </div>
@@ -443,10 +465,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         <div class="container">
             <div class="order_inner">
                 <div class="title">
-                    <h2 class="heading_title"> Please fill up the form to Order</h2>
+                    <h2 class="heading_title">অর্ডার করতে ফর্মটি পূরন করুন</h2>
                 </div>
                 <div class="subtitle">
-                    <h5 class="heading_subtitle">please choose your favourite tamlate</h5>
+                    <h5 class="heading_subtitle">আপনার পছন্দের ল্যান্ডিং পেইজটি নির্বাচন করুন</h5>
                 </div>
                 <div class="checkout" id="checkout-order">
                     <form name="checkout" class="form-checkout">
@@ -454,19 +476,18 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             autocomplete="off">
                         <div class="product_option">
                             <h3 id="your_products_heading" class="product_option_title">
-                                পণ্য নেওয়ার পর কোন সমস্যা হলে অথবা প্রোডাক্ট আপনার ভালো না লাগলে তাহলে সাথে সাথে জানাবেন,
-                                রিটার্ণ এবং রিফান্ড করা হবে ইনশাআল্লাহ! *
+                                আমাদের কাছে থেকে লয়ান্ডিং পেইজ নেওয়ার পর কোন টেকনিক্যাল ইস্যু বা পরিচালনা করতে কোন অসুবিধা হলে আমাদের সাপোর্ট টিম এর সাথে যোগাযোগ করবেন, আমরা ২৪ ঘন্টার মধ্যে সমস্যা সমাধান করে দিব ইনশাল্লাহ।
                             </h3>
                             <div class="product-qty-options" id="myTable">
                                 <div class="product-qty-row">
                                     <div class="wcf-qty-header product-item">
-                                        <div class="row-label">Product</div>
+                                        <div class="row-label">প্রোডাক্ট</div>
                                     </div>
                                     <div class="wcf-qty-header product-qty">
-                                        <div class="row-label">Quantity</div>
+                                        <div class="row-label">্পরিমান</div>
                                     </div>
                                     <div class="wcf-qty-header product-price">
-                                        <div class="row-label">Price</div>
+                                        <div class="row-label">মুল্য</div>
                                     </div>
                                 </div>
                                 <div class="product-qty-row"
@@ -481,16 +502,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                             <picture fetchpriority="high" decoding="async"
                                                 class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail">
                                                 <source type="image/webp"
-                                                    srcset="https://tahashopbd.com/frontend/images/1715523221.jpg">
+                                                    srcset="./assets/images/company_logo/work1jfif400x400.jpg">
                                                 <img fetchpriority="high" decoding="async" width="50" height="50"
-                                                    src="https://tahashopbd.com/frontend/images/1715523221.jpg" alt="">
+                                                    src="./assets/images/company_logo/work1jfif400x400.jpg" alt="">
                                             </picture>
                                         </div>
     
                                         <div class="wcf-item-all-text">
                                             <div class="wcf-item-wrap">
-                                                <span class="wcf-display-title">খাঁটি গাওয়া ঘি , ১কেজি গাওয়া ঘি অর্ডার
-                                                    করলে (Free home delivery)</span><span
+                                                <span class="wcf-display-title">১ বছরের জন্য দোমেইন হোষ্টিং ফ্রি</span><span
                                                     class="wcf-display-title-quantity"><span
                                                         class="dashicons dashicons-no-alt">x</span><span
                                                         class="wcf-display-quantity">1</span></span>
@@ -639,10 +659,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                             <input type="radio" name="shipping_method" id="shipping_method_0_flat_rate1" value="0" class="shipping_no_method" checked="checked">
     
                                             <label for="payment_method_cod">
-                                                ক্যাশঅন ডেলিভারি
+                                                অর্ডার কনফার্ম করুন
                                             </label>
                                             <div class="payment_box payment_method_cod">
-                                                <p>আপনার ঠিকানায় পণ্যটি হোম ডেলিভারি হবে। হাতে পাওয়ার পর সম্পূর্ণ টাকা দিন।
+                                                <p>৫০% টাকা পেমেন্ট দিয়ে অর্ডার করতে হবে এবং ল্যান্ডিং পেইজ লাইভ হোওয়ার পরে বাকি ৫০% পরিশোধ করতে হবে।
                                                 </p>
                                             </div>
                                         </li>
@@ -2070,7 +2090,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6 col-6">
+                    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-12 col-12">
                         <div class="footer_content">
                             <div class="footer_title">
                                 <h3>Company</h3>
@@ -2104,7 +2124,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-6">
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12">
                         <div class="footer_content">
                             <div class="footer_title">
                                 <h3>Products</h3>
@@ -2227,6 +2247,8 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <script src="../cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <!-- Aos Animation js library js-->
     <script src="../unpkg.com/aos%402.3.1/dist/aos.js"></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script>
         AOS.init();
     </script>
@@ -2271,3 +2293,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 </body>
 
 </html>
+
+
+

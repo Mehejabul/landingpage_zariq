@@ -1,3 +1,14 @@
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+
+body{
+    font-family: 'Kalpurush', Arial, sans-serif !important;
+
+    ::marker{
+        display: none !important;
+    } 
+}
+
+
 .payment{
     padding: 20px;
     float: right;
@@ -46,6 +57,12 @@
     color: var(--text);
 }
 
+.plane_wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
 .common_btn_title:hover{
     background: var(--themeColor);
     color: var(--clr-white);
@@ -63,10 +80,6 @@
 }
 
 
-.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev {
- display: none;
-}
-
 .header_title_text{
     font-size: 40px;
     font-weight: bold;
@@ -81,15 +94,17 @@
     margin-bottom: 20px;
 }
 
-.smooth_slide{
-    display: flex;
-    margin: 40px 40px;
-}
-
 .our_single_service {
     margin: 0px 10px !important;
 }
 /* pricing plane end */
+
+/* previous work start */
+.offer_image_container{
+    margin:10px;
+}
+
+/* previous work end */
 
 /* footer area start */
 
@@ -696,3 +711,49 @@ checkout table.shop_table tbody th, .checkout table.shop_table tfoot td, .checko
 
 
 /* Order section css end */
+
+
+
+/* responsive mobile device M start */
+
+@media only screen and (max-width: 424px) and (min-width: 375px) {
+    .aboutus_title {
+        font-size: 25px;
+    }
+
+    .header_title_text {
+        font-size: 25px;
+    }
+
+    .plane_wrapper{
+        margin: 10px 0px;
+    }
+
+    .service_scroll {
+        margin-top: -45px;
+    }
+
+    .order_inner .heading_title {
+        font-size: 25px;
+    }
+
+    .product_option .product-qty {
+        width: 22%; 
+    }
+
+    span.wcf-display-title-quantity {
+        font-size: 15px;
+    }
+
+    .product-qty-options .wcf-item-wrap {
+        font-size: 12px;
+    }
+
+    .fixed_footer_whatsapp_icon {
+        line-height: 45px;
+        right: 35px; 
+    }
+}
+
+
+/* responsive mobile device M end */

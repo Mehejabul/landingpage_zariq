@@ -18,6 +18,59 @@ $(document).ready(function ($) {
         }
     });
 
+//plane slick slide
+
+    $('.plane_wrapper').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024, // at 1024px and below
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 600, // at 600px and below
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
+    //landing page slick slide
+    $('.page_slide').slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        responsive: [
+            {
+                breakpoint: 1024, // at 1024px and below
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 600, // at 600px and below
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
 
     // client_say_active
     $('.client_say_active').owlCarousel({
@@ -67,7 +120,7 @@ $(document).ready(function ($) {
         }
     })
 
- 
+
 
 
 
